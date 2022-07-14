@@ -4,7 +4,7 @@ function renderCalendar(month, year, calendarElement) {
 
     const title = `${monthName} ${year}`;
 
-    calendarElement.querySelector('.calendar_data-title').innerText = title;
+    calendarElement.querySelector('.calendar_data-title').innerHTML = title;
 
     const firstDayOfMonth = new Date();
 
@@ -38,19 +38,27 @@ function renderCalendar(month, year, calendarElement) {
     ) {
         const dayEl = document.createElement('li');
 
+
         dayEl.className = 'calendar__day';
 
         if (renderDay.getMonth() !== month) {
             dayEl.classList.add('calendar__day--not-in-month');
         }
+
+        const link = document.createElement('a');
+
+        link.href =`?day=${renderDay.toJSON()}`;
+        link.innerText = renderDay.getDate();
+
+        dayEl.append(link);
         
         days.push(dayEl);
     }
-    const daysContainer = calendarElement.querySelector('.calendar_data-week-ul');
+        const daysContainer = calendarElement.querySelector('.calendar_data-week-ul');
 
-    daysContainer.innerText = '';
+        daysContainer.innerText = '';
 
-    daysContainer.append( ...days );
+        daysContainer.append( ...days );
 }
 
 
