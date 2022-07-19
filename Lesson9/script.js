@@ -15,7 +15,6 @@ function getPeople(handshake) {
     return visitors;
 }
 
-
 console.log( getPeople(1) );
 console.log( getPeople(3) );
 console.log( getPeople(6) );
