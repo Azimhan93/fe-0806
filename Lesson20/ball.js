@@ -1,10 +1,3 @@
-function sum(a, b) {
-    return new Promise(resolve => {
-        setTimeout(() => resolve(a + b), 2000 * Math.random());
-    });
-}
-
-
 class Ball {
     constructor(selector, speed) {
         this.el = document.querySelector(selector);
@@ -27,8 +20,6 @@ class Ball {
     move(x, y) {
         this.movement = this.movement
             .then((centerCoords) => new Promise(resolve => {
-                // speed = d / t;
-                // t = d / speed;
                 const d = Math.sqrt(Math.pow(centerCoords.x - x, 2) + Math.pow(centerCoords.y - y, 2));
                 const t = d / this.speed;
 
@@ -44,8 +35,6 @@ class Ball {
 }
 
 const ball = new Ball('.circle', 500);
-
-console.log(ball);
 
 window.addEventListener('click', (e) => {
     ball.move(e.clientX, e.clientY);
