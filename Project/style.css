@@ -40,4 +40,12 @@ body {
     font-family: 'Gotham', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
+    background-image: url('./img/frame.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.inviteToGames {
+    
 }
