@@ -47,7 +47,7 @@ body {
 }
 
 .inviteToGames {
-    padding: 16px 68px;
+    padding: 16px 58px;
     display: flex;
 }
 
@@ -63,6 +63,29 @@ body {
     font-weight: bold;
     font-size: 20px;
     text-decoration: none;
+}
+
+.inviteToGames__logo-link:hover {
+    color: #AA82FF;
+}
+
+.inviteToGames__logo-svg {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+    -webkit-transition-property: -webkit-transform;
+    -moz-transition-property: -moz-transform;
+    -o-transition-property: -o-transform;
+    transition-property: transform;
+    overflow: hidden;
+}
+
+.inviteToGames__logo-svg:hover {
+    cursor: pointer;
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
 }
 
 .inviteToGames__links {
@@ -193,7 +216,8 @@ body {
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    color: #FFFFFF
+    color: #FFFFFF;
+    padding-bottom: 98px;
 }
 
 
