@@ -40,12 +40,160 @@ body {
     font-family: 'Gotham', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    background-image: url('./img/frame.jpg');
+    background: linear-gradient( rgba(28, 28, 40, 0.8) 0%, rgba(0, 0, 0, 0.6) ) 77.78%, url('./img/frame.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
 }
 
 .inviteToGames {
-    
+    padding: 16px 68px;
+    display: flex;
 }
+
+.inviteToGames__logo {
+    display: flex;
+    align-items: center;
+    flex-grow: 2;
+}
+
+.inviteToGames__logo-link {
+    padding-left: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.inviteToGames__links {
+    display: flex;
+    gap: 56px;
+    align-self: center;
+    align-items: center;
+}
+
+.inviteToGames__links-nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+.inviteToGames__links-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.inviteToGames__links-ul li {
+    padding: 0 20px;
+}
+
+.inviteToGames__links-ul a {
+   text-decoration: none;
+   color: white;
+   font-style: 14px; 
+   font-weight: 700;
+   font-size: 14px;
+   line-height: 17px;
+}
+
+.inviteToGames__links-form {
+    position: relative;
+}
+
+.inviteToGames__links-search {
+    background: #FEFDFE;
+    border: 1px solid #E4E5EC;
+    border-radius: 34px;
+    padding: 10px 10px;
+    background-image: url('./img/searchicon.png');
+    width: 219px;
+}
+
+.inviteToGames__links-form img {
+    position: absolute;
+    background: linear-gradient(267.28deg, #7B61FF 24%, #AA82FF 73.95%);
+    width: 28px;
+    height: 28px;
+    top: 4px;
+    right: 10px;
+    border-radius: 12px;
+}
+
+.worldOfGames {
+    padding-top: 188px;
+}
+
+.worldOfGames__main p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    position: relative;
+    padding-bottom: 24px;
+}
+
+.worldOfGames__main p::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: white;
+    width: 5%;
+    margin-left: 15px;
+    top: 40%;
+    left: 59%;
+}
+
+.worldOfGames__main p::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: white;
+    width: 5%;
+    top: 40%;
+    right: 60%;
+}
+
+
+.worldOfGames__main-title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    padding-bottom: 40px;
+}
+
+.worldOfGames__main-member {
+    display: flex;
+    justify-content: center;
+}
+
+.worldOfGames__main-btn {
+    display: inline-block;
+    text-align: center;
+    background: linear-gradient(267.28deg, #7B61FF 24%, #AA82FF 73.95%);
+    backdrop-filter: blur(4px);
+    border-radius: 100px;
+    border: none;
+    padding: 18.5px 40px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    margin-bottom: 229px;
+}
+
+.worldOfGames__main-scroll {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF
+}
+
+
