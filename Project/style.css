@@ -40,7 +40,7 @@ body {
     font-family: 'Gotham', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    background: linear-gradient( rgba(28, 28, 40, 0.8) 0%, rgba(0, 0, 0, 0.6) ) 77.78%, url('./img/frame.jpg');
+    background: linear-gradient( rgba(28, 28, 40, 0.8) 30%, rgba(0, 0, 0, 0.6) ) 77.78%, url('./img/frame.jpg');
     background-repeat: no-repeat;
     background-position: center top;
     background-size: cover;
@@ -212,6 +212,8 @@ body {
 }
 
 .worldOfGames__main-scroll {
+    display: flex;
+    justify-content: center;
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
@@ -220,4 +222,23 @@ body {
     padding-bottom: 98px;
 }
 
+.worldOfGames__main-scroll img {
+    align-self: baseline;
+    margin-left: 10px;
+    animation: animate 1s infinite;
+    animation-timing-function: linear;
+    cursor: pointer;
+}
+
+/* @keyframes animate {
+    50% {
+        margin-top: 10px;
+    }
+} */
+
+.worldGamesCompanies {
+    padding-top: 153px;
+    background: linear-gradient(360deg, rgba(7, 7, 44, 0.8) 0%, rgba(3, 3, 29, 0) 77.78%);
+    padding-bottom: 153px;
+}
 
