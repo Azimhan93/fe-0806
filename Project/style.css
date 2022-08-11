@@ -77,13 +77,15 @@ body {
     overflow: hidden;
 }
 
-.inviteToGames__logo-link:hover,
 .inviteToGames__logo-svg:hover {
-    color: #AA82FF;
     cursor: pointer;
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg); 
+}
+
+.inviteToGames__logo-link:hover {
+    color: #AA82FF;
 }
 
 .inviteToGames__links {
