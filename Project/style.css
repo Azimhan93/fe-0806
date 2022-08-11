@@ -40,10 +40,11 @@ body {
     font-family: 'Gotham', Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    background: linear-gradient( rgba(28, 28, 40, 0.8) 30%, rgba(0, 0, 0, 0.6) ) 77.78%, url('./img/frame.jpg');
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: contain;
+}
+
+header {
+    background: linear-gradient(360deg, rgb(36 36 47) 0%, rgb(37 37 48) 77.78%);
+    border-bottom: 2px solid #272731;
 }
 
 .inviteToGames {
@@ -151,6 +152,33 @@ body {
 
 .worldOfGames {
     padding-top: 188px;
+    background: linear-gradient( rgba(28, 28, 40, 0.8) 30%, rgba(0, 0, 0, 0.6) ) 77.78%, url('./img/frame.jpg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    position: relative;
+    border-bottom: 2px solid #1b1b2a;
+}
+
+.worldOfGames__top-gradient {
+    background: linear-gradient(360deg, rgba(28, 28, 40, 0.8) 0%, rgba(28, 28, 40, 0) 77.78%);
+    transform: rotate(-180deg);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    left: 0;
+}
+
+.worldOfGames__bottom-gradient {
+    background: linear-gradient(360deg, #1C1C28 0%, rgba(28, 28, 40, 0) 77.78%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50%;
+    z-index: 0;
+    left: 0;
 }
 
 .worldOfGames__main p {
@@ -194,6 +222,7 @@ body {
     color: #FFFFFF;
     mix-blend-mode: normal;
     padding-bottom: 40px;
+    z-index: 1;
 }
 
 .worldOfGames__main-member {
@@ -215,6 +244,7 @@ body {
     line-height: 19px;
     color: #FFFFFF;
     margin-bottom: 229px;
+    z-index: 1;
 }
 
 .worldOfGames__main-btn:hover {
@@ -231,6 +261,11 @@ body {
     color: #FFFFFF;
     padding-bottom: 98px;
     padding-top: 300px;
+    z-index: 1;
+}
+
+.worldOfGames__main-scroll span {
+    z-index: 1;
 }
 
 .worldOfGames__main-scroll img {
@@ -239,6 +274,7 @@ body {
     animation: animate 1s infinite;
     animation-timing-function: linear;
     cursor: pointer;
+    z-index: 1;
 }
 
 /* @keyframes animate {
@@ -249,7 +285,7 @@ body {
 
 .worldGamesCompanies {
     padding-top: 100px;
-    background: linear-gradient(360deg, rgba(7, 7, 44, 0.8) 0%, rgba(3, 3, 29, 0) 77.78%);
+    background: linear-gradient(360deg, rgb(26 26 39) 0%, rgb(27 27 39) 77.78%);
 }
 
 .worldGamesCompanies__logotypes {
