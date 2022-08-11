@@ -335,3 +335,31 @@ header {
     color: #FFFFFF;
     padding-bottom: 50px;
 }
+
+
+.worldGamesCompanies__articles {
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+.worldGamesCompanies__articles-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 24px;
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 185px;
+}
+
+.article_img1 {
+    width: 250px;
+    height: 155px;
+    position: relative;
+}
+
+
+.article_icon1 {
+    width: 56px;
+    height: 56px;
+    position: absolute;
+}
