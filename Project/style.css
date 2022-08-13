@@ -425,3 +425,67 @@ header {
     margin-bottom: auto;
     margin-top: auto;
 }
+
+.gamesLibrary {
+    background: linear-gradient(180deg, #1C1C28 0%, rgba(28, 28, 40, 0.8) 20.31%, rgba(28, 28, 40, 0.7) 33.85%, rgba(28, 28, 40, 0) 100%), url('./img/frame4.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+}
+
+.gamesLibrary h2 {
+    padding-top: 78px;
+    padding-bottom: 30px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.gamesLibrary__tabs {
+    padding-top: 30px;
+}
+
+.gamesLibrary__tabs-list {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.gamesLibrary__tabs-list li {
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    padding-bottom: 60px;
+}
+
+.gamesLibrary__articles {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -15px;
+}
+
+.gamesLibrary__articles-block {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.gamesLibrary__articles-block--item {
+    background: rgba(24, 25, 32, 0.1);
+    backdrop-filter: blur(32.2141px);
+    padding: 16px 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.gamesLibrary__articles-block--item img {
+    padding: 0;
+}
+
