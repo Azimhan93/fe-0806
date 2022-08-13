@@ -198,7 +198,7 @@ header {
     background-color: white;
     width: 5%;
     margin-left: 15px;
-    top: 40%;
+    top: 20%;
     left: 59%;
 }
 
@@ -208,7 +208,7 @@ header {
     height: 2px;
     background-color: white;
     width: 5%;
-    top: 40%;
+    top: 20%;
     right: 60%;
 }
 
@@ -264,28 +264,27 @@ header {
     z-index: 1;
 }
 
-.worldOfGames__main-scroll span {
+.worldOfGames__main-scroll a {
     z-index: 1;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
 }
 
 .worldOfGames__main-scroll img {
     align-self: baseline;
     margin-left: 10px;
-    animation: animate 1s infinite;
-    animation-timing-function: linear;
     cursor: pointer;
     z-index: 1;
 }
 
-/* @keyframes animate {
-    50% {
-        margin-top: 5px;
-    }
-} */
-
 .worldGamesCompanies {
     padding-top: 100px;
     background: linear-gradient(360deg, rgb(26 26 39) 0%, rgb(27 27 39) 77.78%);
+    padding-bottom: 200px;
 }
 
 .worldGamesCompanies__logotypes {
@@ -294,7 +293,8 @@ header {
     padding-bottom: 171px;
 }
 
-.worldGamesCompanies__meeting p {
+
+.worldGamesCompanies__meeting-describe {            /*addddddddddddddd*/
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -305,24 +305,24 @@ header {
     padding-bottom: 16px;
 }
 
-.worldGamesCompanies__meeting p::after {
+.worldGamesCompanies__meeting-describe::after {            /*addddddddddddddd*/
     position: absolute;
     content: "";
     height: 2px;
     background-color: #F68E5F;
     width: 5%;
     margin-left: 15px;
-    top: 40%;
+    top: 30%;
     left: 54%;
 }
 
-.worldGamesCompanies__meeting p::before {
+.worldGamesCompanies__meeting-describe::before {            /*addddddddddddddd*/
     position: absolute;
     content: "";
     height: 2px;
     background-color: #F68E5F;
     width: 5%;
-    top: 40%;
+    top: 30%;
     right: 55%;
 }
 
@@ -333,28 +333,44 @@ header {
     line-height: 40px;
     text-align: center;
     color: #FFFFFF;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
 }
 
-
 .worldGamesCompanies__articles {
-    width: 33.3%;
-    padding: 0 15px;
+    margin: 0 -15px;
+    display: flex;
 }
 
 .worldGamesCompanies__articles-block {
+    position: relative;
+    padding: 0 15px;  
+    width: 33.333%;  /*adddddddddddddddddddd*/
+}
+
+.worldGamesCompanies__articles-block--item {    /*adddddddddddddddddddd*/
     display: flex;
     flex-direction: column;
     padding-left: 24px;
     padding-top: 24px;
     padding-right: 24px;
-    padding-bottom: 185px;
+    padding-bottom: 85px;
+    background: #20202E;
+    box-shadow: inset 0px 2px 0px #61FFDA;    /*adddddddddddddddddddd*/
 }
 
+.border__item2 {
+    box-shadow: inset 0px 2px 0px #7B61FF;
+}
+
+.border__item3 {
+    box-shadow: inset 0px 2px 0px #FF626B;
+} 
+
 .article_img1 {
-    width: 250px;
-    height: 155px;
-    position: relative;
+    width: 100%;
+    height: 250px;
+    opacity: 0.7;
+    margin-bottom: 24px;     /*adddddddddddddddddddd*/
 }
 
 
@@ -362,4 +378,50 @@ header {
     width: 56px;
     height: 56px;
     position: absolute;
+    top: 218px;                    /*adddddddddddddddddddd*/
+}
+
+.worldGamesCompanies__articles-block span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DEE1FF;
+}
+
+.background__svg1 {
+    position: absolute;
+    opacity: 0.4;
+    top: 286px;
+    left: 13px;
+}
+
+.background__svg2 {
+    position: absolute;
+    top: 286px;
+    left: 225px;
+    opacity: 0.4;
+}
+
+.background__svg3 {
+    position: absolute;
+    top: 286px;
+    left: 235px;
+    opacity: 0.4;
+}
+
+.background__svg4 {
+    position: absolute;
+    top: 286px;
+    left: 245px;
+    opacity: 0.4;
+}
+
+.worldGamesCompanies__articles-block--paragrarh {
+    padding-top: 33px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #DEE1FF;
+    margin-bottom: auto;
+    margin-top: auto;
 }
