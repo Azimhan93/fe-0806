@@ -294,7 +294,7 @@ header {
 }
 
 
-.worldGamesCompanies__meeting-describe {            /*addddddddddddddd*/
+.worldGamesCompanies__meeting-describe {           
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -305,7 +305,7 @@ header {
     padding-bottom: 16px;
 }
 
-.worldGamesCompanies__meeting-describe::after {            /*addddddddddddddd*/
+.worldGamesCompanies__meeting-describe::after {         
     position: absolute;
     content: "";
     height: 2px;
@@ -316,7 +316,7 @@ header {
     left: 54%;
 }
 
-.worldGamesCompanies__meeting-describe::before {            /*addddddddddddddd*/
+.worldGamesCompanies__meeting-describe::before {          
     position: absolute;
     content: "";
     height: 2px;
@@ -344,10 +344,10 @@ header {
 .worldGamesCompanies__articles-block {
     position: relative;
     padding: 0 15px;  
-    width: 33.333%;  /*adddddddddddddddddddd*/
+    width: 33.333%;  
 }
 
-.worldGamesCompanies__articles-block--item {    /*adddddddddddddddddddd*/
+.worldGamesCompanies__articles-block--item {    
     display: flex;
     flex-direction: column;
     padding-left: 24px;
@@ -355,7 +355,7 @@ header {
     padding-right: 24px;
     padding-bottom: 85px;
     background: #20202E;
-    box-shadow: inset 0px 2px 0px #61FFDA;    /*adddddddddddddddddddd*/
+    box-shadow: inset 0px 2px 0px #61FFDA;   
 }
 
 .border__item2 {
@@ -370,15 +370,14 @@ header {
     width: 100%;
     height: 250px;
     opacity: 0.7;
-    margin-bottom: 24px;     /*adddddddddddddddddddd*/
+    margin-bottom: 24px;   
 }
-
 
 .article_icon1 {
     width: 56px;
     height: 56px;
     position: absolute;
-    top: 218px;                    /*adddddddddddddddddddd*/
+    top: 218px;               
 }
 
 .worldGamesCompanies__articles-block span {
@@ -446,6 +445,7 @@ header {
 
 .gamesLibrary__tabs {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .gamesLibrary__tabs-list {
@@ -456,36 +456,128 @@ header {
     margin: 0;
 }
 
+.gamesLibrary__tabs-list .tab .active {
+    background: #F68E5F;
+    border-radius: 48px;
+}
+
+.gamesLibrary__tabs-list .tab:hover {
+    background: #F68E5F;
+    border-radius: 48px;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
 .gamesLibrary__tabs-list li {
     cursor: pointer;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
-    padding-bottom: 60px;
 }
 
 .gamesLibrary__articles {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 0 -15px;
+    padding-bottom: 100px;
 }
 
 .gamesLibrary__articles-block {
     width: 25%;
-    padding: 0 15px;
+    padding: 15px 15px;
+    z-index: 1;
 }
 
 .gamesLibrary__articles-block--item {
     background: rgba(24, 25, 32, 0.1);
     backdrop-filter: blur(32.2141px);
-    padding: 16px 18px;
     height: 100%;
     display: flex;
     flex-direction: column;
 }
 
-.gamesLibrary__articles-block--item img {
-    padding: 0;
+.gamesLibrary__articles-block--item h3 {
+    padding: 16px 18px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 138.2%;
+    color: #FFFFFF;
 }
+
+.gamesLibrary__articles-block--item p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 138.2%;
+    color: #FFFFFF;
+    padding: 5px 18px;
+}
+
+.gamesLibrary__articles-block--price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+}
+
+.gamesLibrary__articles-block--price_grade {
+    display: flex;
+    align-items: center;
+}
+
+.gamesLibrary__articles-block--price .rating {
+    padding-left: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    color: #C9CAD8;
+    font-size: 14px;
+}
+
+.gamesLibrary__articles-block--price .orders {
+    font-weight: 400;
+    line-height: 12px;
+    color: #C9CAD8;
+    font-size: 14px;
+} 
+
+.gamesLibrary__articles-block--price .btn {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+    color: #FFFFFF;
+    background: #F68E5F;
+    border-radius: 19.3285px;
+    border: none;
+    padding: 8px 8px;
+    cursor: pointer;
+}
+
+.gamesLibrary__articles-block--price .btn:hover {
+    color: #C9CAD8;
+    background: #4c38ac;
+}
+
+
+.gamesLibrary__gradient {
+    background: linear-gradient(180deg, #1C1C28 0%, rgba(28, 28, 40, 0) 100%);
+    transform: rotate(-180deg);
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    bottom: 0;
+    left: 0;
+}
+
+.gamesVideoPresent {
+    padding-bottom: 265px;
+    padding-top: 100px;
+    background: #1c1c28;
+}
+
+
+
+
 
