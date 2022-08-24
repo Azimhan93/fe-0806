@@ -230,7 +230,7 @@ a {
     top: 8px;
 }
     
-.menubox {
+.menuBox {
     display: block;
     position: fixed;
     visibility: hidden;
@@ -279,7 +279,7 @@ a {
     transform: rotate(90deg);
 }
     
-#menu-toggle:checked ~ .menubox{
+#menu-toggle:checked ~ .menuBox{
     visibility: visible;
     left: 0;
 }
