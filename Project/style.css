@@ -92,10 +92,10 @@ header {
 }
 
 .inviteToGames__logo-svg:hover {
-    cursor: pointer;
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -o-transform: rotate(360deg); 
+    cursor: pointer;
 }
 
 .inviteToGames__logo-link:hover {
@@ -1266,4 +1266,41 @@ footer {
         text-align: center;
     }
 
+    .gamesDimention p::before {
+        display: none;
+    }
+
+    .gamesDimention button {
+        padding: 24px 24px;
+        width: 50%;
+    }
+
+    .gamesDimention__down {
+        display: none;
+    }
+
+    .footer_section-content {
+        display: none;
+    }
+
+    .footer_section-link {
+        gap: 140px;
+        text-align: center;
+    }
+
+    .footer_section {
+        justify-content: center;
+    }
+
+    .section-links__link-item .first-link {
+        font-size: 26px;
+    }
+
+    .section-links__link-item li {
+        padding-bottom: 20px;
+    }
+
+    .section-links__link-item a {
+        font-size: 24px;
+    }
 }
