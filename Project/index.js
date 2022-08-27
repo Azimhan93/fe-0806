@@ -105,3 +105,5 @@ function setTime() {
     const barLength = timerWrapper.clientWidth * (media.currentTime / media.duration);
     timerBar.style.width = `${barLength}px`;
 }
+
+export default index.js
